@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Yu-Gi-Oh Jo-ken-po</title>
+
+    <!-- Fonte do Google Fonts - Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <!-- background video -->
+    <div class="bg-video">
+        <video class="video" autoplay loop muted>
+            <source src="./src/assets/video/yugi.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- game div -->
+    <div class="container">
+
+        <!-- container esquerdo-->
+        <div class="container__left framed-golden-2">
+            <div class="score_box frame">
+                <span id="score_points">
+                    Win: 0 | Lose:0
+                </span>
+            </div>
+
+            <div class="menu_avatar">
+                <img id="card_image">
+            </div>
+
+            <div class="card_details frame">
+                <p id="card-name">a</p>
+                <p id="card-type">a</p>
+            </div>
+        </div>
+
+        <!-- container direito-->
+        <div class="container__right">
+            <div class="clard-box__container">
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- JS -->
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+</html>
