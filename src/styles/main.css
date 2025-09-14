@@ -71,3 +71,9 @@
     font-size: 1rem;
 }
 
+.versus-botton botton {
+    display: flex;    
+    justify-items: center;
+    align-items: center;
+}
+
