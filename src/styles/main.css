@@ -2,6 +2,8 @@
 @import url("buttons.css");
 @import url("containers_and_frames.css");
 
+/* -- Background video -- */
+
 .bg-video {
     position: absolute;
     z-index: -2;
@@ -26,6 +28,8 @@
     background: linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0.8)60%, rgba(0, 0, 0, 1)100%);
 }
 
+/* -- Container -- */
+
 .container {
     position: relative;
     z-index: 3;
@@ -42,15 +46,11 @@
     justify-content: space-around;    
 }
 
-.score_box {
-    background: #ffff;
-    padding: 30px;    
+.container__right {
+    width:65%;
 }
 
-.frame {
-    border: 3px solid #000;
-    border-radius: 5px;
-}
+/* -- Card details -- */
 
 .card_details {
     background: #ffff;
@@ -71,9 +71,78 @@
     font-size: 1rem;
 }
 
-.versus-botton botton {
-    display: flex;    
-    justify-items: center;
+/*-- Score box --*/
+
+.score_box {
+    background: #ffff;
+    padding: 30px;    
+}
+
+/*-- Frame --*/
+
+.frame {
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+/*-- cards-box right --*/
+
+.card-box__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .3rem;
+}
+
+.card-versus__container {    
+    margin-top: 2rem;
+    display: flex;
+    flex-direction:column;    
     align-items: center;
+    height: 300px;
+}
+
+.versus-top, .versus-botton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.versus-botton {
+    margin-top: 1rem;
+}
+
+/* -- Botton --*/
+
+.versus-botton botton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#next-duel {
+    display: none;
+}
+
+/*-- card-box --*/
+
+.card-box {
+    height: 9rem;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*-- card-infield --*/
+
+.card-infield {
+    height: 11.2rem;
+    width: 8rem;    
+    border-radius: .6rem;
 }
 
